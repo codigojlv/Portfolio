@@ -1,0 +1,659 @@
+/* Estilos base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Una fuente moderna y legible */
+  display: flex;
+  color: #444; /* Gris más claro para el texto principal */
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f6f8; /* Fondo gris muy claro */
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #007bff; /* Color primario */
+  color: white;
+  border: none;
+  font-size: 24px;
+  z-index: 1100;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-toggle:hover {
+  background-color: #0056b3;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}
+
+/* Barra lateral */
+.sidebar {
+  width: 15%;
+  background-color: #333; /* Fondo oscuro para la barra lateral */
+  color: #eee;
+  padding: 30px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar img {  /*foto*/
+  border-radius: 15px;
+}
+.sidebar h2 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 2em;
+  color: #007bff; /* Color primario */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 1.1em;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  background-color: #007bff; /* Color primario al pasar el ratón */
+  color: white;
+}
+
+/* Contenido principal */
+.contenido {
+  margin-left: 300px;
+  padding: 30px;
+  flex: 1;
+  background-color: #fff; /* Fondo blanco para el contenido */
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+header {
+  padding-bottom: 50px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+header .texto-animado {
+  font-size: 3em;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -0.03em;
+  margin-bottom: 15px;
+}
+
+header p {
+  color: #777;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Secciones principales */
+section {
+  padding: 70px 0;
+}
+
+section h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #007bff; /* Línea de acento bajo el título */
+}
+
+/* Sobre mí */
+#sobre-mi p {
+  font-size: 1.15em;
+  line-height: 1.8;
+}
+
+/* Proyectos */
+#proyectos {
+  background-color: #f9f9f9; /* Fondo ligeramente diferente */
+  padding: 70px 30px;
+  border-radius: 8px;
+}
+
+#proyectos article {
+  margin-bottom: 40px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#proyectos h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#proyectos p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#proyectos a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+#proyectos a:hover {
+  color: #0056b3;
+}
+
+/* Educación */
+#educacion {
+  padding: 70px 30px;
+}
+
+#educacion h2 {
+  text-align: left; /* Alinear a la izquierda en esta sección */
+  border-bottom-color: #007bff; /* Otro color de acento */
+}
+
+#educacion h3 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+#educacion ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#educacion li {
+  margin-bottom: 25px;
+}
+
+#educacion strong {
+  font-weight: 600;
+  color: #222;
+}
+
+#educacion em {
+  font-style: italic;
+  color: #777;
+}
+
+.cursos h3 {
+  font-size: 1.5em;
+  color: #28a745;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.cursos p {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.cursos ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: disc;
+  margin-top: 1rem;
+  padding-left: 20px;
+}
+
+.cursos li {
+  margin-bottom: 10px;
+}
+
+/* Mi Stack Tecnológico */
+#habilidades.stack-tecnologico {
+  padding: 70px 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.stack-tecnologico .titulo-principal {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #007bff; /* Otro color de acento */
+}
+
+.stack-tecnologico .subtitulo {
+  font-size: 1.8em;
+  color: #555;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.stack-tecnologico .bloque {
+  margin-bottom: 50px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.stack-tecnologico ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stack-tecnologico li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stack-tecnologico li img {
+  margin-top: 15px;
+  max-width: 100px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.stack-tecnologico li img:hover {
+  transform: scale(1.1);
+}
+
+/* Contacto */
+#contacto {
+  padding: 70px 0;
+  background-color: #fff;
+}
+
+#contacto h2 {
+  border-bottom-color: #007bff; /* Otro color de acento */
+}
+
+#contacto form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#contacto label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+#contacto textarea {
+  resize: vertical;
+  min-height: 180px;
+}
+
+#contacto button[type="submit"] {
+  background-color: #dc3545; /* Color de acento */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contacto button[type="submit"]:hover {
+  background-color: #c82333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #777;
+  font-size: 0.9em;
+  border-top: 1px solid #eee;
+  margin-top: 80px;
+  background-color: #f4f6f8;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #0056b3;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+      flex-direction: column;
+  }
+
+  .menu-toggle {
+      display: block;
+      top: 15px;
+      left: 15px;
+  }
+
+  .sidebar {
+      transform: translateX(-100%);
+      width: 220px;
+      height: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+  }
+  
+  .sidebar.activo {
+      transform: translateX(0);
+  }
+
+  .contenido {
+      margin-left: 0;
+      padding: 20px;
+  }
+
+  header {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+
+  header .texto-animado {
+      font-size: 2.5em;
+  }
+
+  section {
+      padding: 50px 20px;
+  }
+
+  section h2 {
+      font-size: 2.2em;
+      text-align: center;
+      border-bottom: 2px solid;
+      padding-bottom: 10px;
+  }
+
+  #educacion h2 {
+      text-align: center;
+  }
+
+  .cursos ul {
+      columns: 1;
+  }
+
+  .stack-tecnologico ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .stack-tecnologico .titulo-principal {
+      text-align: center;
+  }
+
+  #contacto h2 {
+      text-align: center;
+  }
+
+  #contacto form {
+      padding: 30px;
+  }
+
+  footer {
+      padding: 30px 20px;
+      margin-top: 60px;
+  }
+}
+
+/* modo oscuro portfolio------ */
+
+/* Estilos del botón de modo oscuro */
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  color: #333;
+  border: 1px solid #333;
+  font-size: 1.5em;
+  z-index: 1200;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+#darkModeToggle:hover {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+#darkModeToggle:focus {
+  outline: none;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+body.dark-mode .menu-toggle {
+  color: #d4d4d4;
+  border-color: #d4d4d4;
+}
+
+body.dark-mode .menu-toggle:hover {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+body.dark-mode .sidebar {
+  background-color: #252525;
+  color: #d4d4d4;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .sidebar h2 {
+  color: #00aaff; /* Un tono diferente del azul para el modo oscuro */
+}
+
+body.dark-mode .sidebar a {
+  color: #d4d4d4;
+}
+body.dark-mode .sidebar img {  /*foto*/
+  border-radius: 15px;
+}
+body.dark-mode .sidebar a:hover {
+  background-color: #00aaff;
+  color: #252525;
+}
+
+body.dark-mode .contenido {
+  background-color: #333;
+  color: #d4d4d4;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode header {
+  border-bottom-color: #555;
+}
+
+body.dark-mode header .texto-animado {
+  color: #eee;
+}
+
+body.dark-mode header p {
+  color: #bbb;
+}
+
+body.dark-mode section h2 {
+  color: #eee;
+  border-bottom-color: #00aaff; /* Ajusta los colores de las líneas de acento */
+}
+
+body.dark-mode #proyectos {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark-mode #proyectos article {
+  border-color: #555;
+  background-color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #proyectos h3 {
+  color: #eee;
+}
+
+body.dark-mode #proyectos p {
+  color: #ccc;
+}
+
+body.dark-mode #proyectos a {
+  color: #00aaff;
+}
+
+body.dark-mode #educacion h2 {
+  border-bottom-color: #007bff; /* Ajusta el color de acento */
+}
+
+body.dark-mode #educacion strong {
+  color: #eff5f5; /* Un tono cian claro, puedes ajustarlo a tu gusto */
+}
+body.dark-mode .cursos h3 {
+  color: #007bff;
+}
+
+body.dark-mode .cursos p {
+  color: #ffffff;
+}
+
+body.dark-mode .stack-tecnologico {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark-mode .stack-tecnologico .titulo-principal {
+  border-bottom-color: #007bff; /* Ajusta el color de acento */
+  color: #eee;
+}
+
+body.dark-mode .stack-tecnologico .subtitulo {
+  color: #ccc;
+}
+
+body.dark-mode .stack-tecnologico .bloque {
+  background-color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #contacto {
+  background-color: #333;
+  border-top-color: #555;
+}
+
+body.dark-mode #contacto h2 {
+  border-bottom-color: #007bff; /* Ajusta el color de acento */
+  color: #eee;
+}
+
+body.dark-mode #contacto form {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #contacto label {
+  color: #eee;
+}
+
+body.dark-mode #contacto input[type="text"],
+body.dark-mode #contacto input[type="email"],
+body.dark-mode #contacto textarea {
+  background-color: #444;
+  color: #eee;
+  border-color: #666;
+}
+
+body.dark-mode #contacto button[type="submit"] {
+  background-color: #ff4d4d;
+}
+
+body.dark-mode #contacto button[type="submit"]:hover {
+  background-color: #d63031;
+}
+
+body.dark-mode footer {
+  color: #bbb;
+  border-top-color: #555;
+  background-color: #252525;
+}
+
+body.dark-mode footer a {
+  color: #00aaff;
+}
+
+body.dark-mode #contacto a{
+  color: #f9fafc;
+  text-decoration: none;
+  line-height: 2.2;
+}
