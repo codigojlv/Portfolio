@@ -13,14 +13,14 @@
 
   <!-- Barra lateral -->
   <nav class="sidebar" id="sidebar">
-    <img src="./imagenes/yo.png" alt="Descripción" width="189">
+    <img src="./imagenes/yo1.png" alt="mifoto" >
     <ul>
       <button id="darkModeToggle">🌙</button>
       <button class="menu-toggle" id="menu-toggle">☰</button>
       <li><a href="#sobre-mi">"Acerca de Mí"</a></li>
       <li><a href="#proyectos">"Proyectos Web"</a></li>
       <li><a href="#educacion">"Educación"</a></li>
-      <li><a href="#habilidades">"Stack Tecnológico"</a></li>
+      <li><a href="#Mi Stack Tecnológico">"Stack Tecnológico"</a></li>
       <li><a href="#contacto">"Contacto"</a></li>
     </ul>
     
@@ -31,22 +31,8 @@
     <header>
       <div class="texto-animado">
         <span class="nombre">
-            <span style="--i:1">José Luis Valbuena Lugo</span>
-            <!-- <span style="--i:2">o</span>
-            <span style="--i:3">s</span>
-            <span style="--i:4">e</span>
-            <span style="--i:5">L</span>
-            <span style="--i:6">u</span>
-            <span style="--i:7">i</span>
-            <span style="--i:8">s</span>
-            <span style="--i:9">V</span>
-            <span style="--i:10">a</span>
-            <span style="--i:11">l</span>
-            <span style="--i:12">b</span>
-            <span style="--i:13">u</span>
-            <span style="--i:14">e</span>
-            <span style="--i:15">n</span>
-            <span style="--i:16">a</span> -->
+            <span style="--i:1"><br>José Luis Valbuena Lugo</span>
+        
       </div>
       <!-- <img src="./imagenes/nombre.png" alt="Descripción" width="100%"> -->
       <p>Desarrollador Web | Ventas | Logística</p>
@@ -86,50 +72,89 @@
           </li>
         </ul>
       </div>
+    </section>
     
       <!-- Cursos Platzi -->
-      <div class="cursos">
-        <h3 style="font-size: 1.5rem; color: #007acc;">Cursos Certificados (Platzi)</h3>
-
-        <p>Todos los cursos incluyen certificados oficiales disponibles bajo solicitud.</p>
-        <ul>
-          <li>Fundamentos de Ingenieria de Sofware</li>
-          <li>Excel Básico Tablas y Fórmulas para la Gestión de Datos</li>
-          <li>Introducción a Estadística y Probabilidad</li>
-          <li>Ética y Manejo de Datos para Data Science e Inteligencia Artificial</li>
-          <li>Excel Intermedio para Analistas con Tableros y Fórmulas</li>
-          <li>Visualización de Datos y Storytelling con Latinometrics</li>
-          <li>Visualización de Datos para Business Intelligence</li>
-          <li>Business Intelligence Utilidad y Áreas de Oportunidad</li>
-          <li>Métricas Esenciales de Negocio</li>
-          <li>Excel Avanzado para Análisis de Datos</li>
-          <li>No-Code con Appsheet</li>
-          <li>Fundamentos de Bases de Datos</li>
-          <li>Visualización de Datos para BI</li>
-          <li> PostgreSQL</li>
-          <li>Negociar con Clientes Corporativos</li>
-          <li> Estrategia Comercial </li>
-          <li>CRM con Salesforce</li>
-          <li>Técnicas para Clasificar y Convertir ventas</li>
-          <li>Negociación Efectiva para Cerrar Negocios</li>
-          <li> Estrategias de Negociación con Inversionistas</li>
-          <li>Cómo Manejar Conversaciones Difíciles con Clientes</li>
-          <li>HTML y CSS</li>
-          <li>Fundamentos de JavaScript</li>
-          <li>Introducción a los Patrones de Diseño de Software</li>
-          <li>Pensamiento Logico Algoritmos y Diagramas de Flujo</li>
-          <li>Pensamiento Logico Manejo de Datos, Estructuras y Funciones</li>
-          <li>Pensamiento Logico Lenguajes de Programación</li>
-          <li>Basico de PHP Instalacion, Fundamentos y Operadores</li>
-          <li>PHP Arreglos Funciones y Estructuras de Control</li>
-          <li>PHP Integracion con HTML</li>
-          <li>Práctico de PHP</li>
-          <li>PHP Cookies, Sesiones y Modularizacion</li>
-          <li>Bases de Datos con MySQL y MariaDB</li>
-          
+      
+        <div class="miscursos">
+        <h3 style=" padding-left: 32px; font-size: 1.5rem; color: #007acc;">Cursos Certificados</h3>
+        <ul id="acordeon">
+          <li>
+            <div class="titulo" onclick="toggleContenido('contenido1')"> Análisis de Datos y Business Intelligence</div>
+            <div id="contenido1" class="contenidoa">
+              <ul>
+                <li>Fundamentos de Ingeniería de Software</li>
+                <li>Fundamentos de Bases de Datos</li>
+                <li>PostgreSQL</li>
+                <li>Bases de Datos con MySQL y MariaDB</li>
+                <li>Excel Básico: Tablas y Fórmulas para la Gestión de Datos</li>
+                <li>Excel Intermedio para Analistas con Tableros y Fórmulas</li>
+                <li>Excel Avanzado para Análisis de Datos</li>
+                <li>Visualización de Datos y Storytelling con Latinometrics</li>
+                <li>Visualización de Datos para Business Intelligence</li>
+                <li>Business Intelligence: Utilidad y Áreas de Oportunidad</li>
+                <li>Métricas Esenciales de Negocio</li>
+              </ul>
+            </div>
+          </li>
+    
+          <li>
+            <div class="titulo" onclick="toggleContenido('contenido2')"> Programación y Desarrollo Web</div>
+            <div id="contenido2" class="contenidoa">
+              <ul>
+                <li>HTML y CSS</li>
+                <li>Fundamentos de JavaScript</li>
+                <li>Introducción a los Patrones de Diseño de Software</li>
+                <li>Pensamiento Lógico: Algoritmos y Diagramas de Flujo</li>
+                <li>Pensamiento Lógico: Manejo de Datos, Estructuras y Funciones</li>
+                <li>Pensamiento Lógico: Lenguajes de Programación</li>
+                <li>Básico de PHP: Instalación, Fundamentos y Operadores</li>
+                <li>PHP: Arreglos, Funciones y Estructuras de Control</li>
+                <li>PHP: Integración con HTML</li>
+                <li>Práctico de PHP</li>
+                <li>PHP: Cookies, Sesiones y Modularización</li>
+              </ul>
+            </div>
+          </li>
+    
+          <li>
+            <div class="titulo" onclick="toggleContenido('contenido3')"> Data Science e Inteligencia Artificial</div>
+            <div id="contenido3" class="contenidoa">
+              <ul>
+                <li>Ética y Manejo de Datos para Data Science e Inteligencia Artificial</li>
+                <li>No-Code con Appsheet</li>
+              </ul>
+            </div>
+          </li>
+    
+          <li>
+            <div class="titulo" onclick="toggleContenido('contenido4')"> Habilidades Profesionales y Negociación</div>
+            <div id="contenido4" class="contenidoa">
+              <ul>
+                <li>Negociar con Clientes Corporativos</li>
+                <li>Estrategia Comercial</li>
+                <li>CRM con Salesforce</li>
+                <li>Técnicas para Clasificar y Convertir Ventas</li>
+                <li>Negociación Efectiva para Cerrar Negocios</li>
+                <li>Estrategias de Negociación con Inversionistas</li>
+                <li>Cómo Manejar Conversaciones Difíciles con Clientes</li>
+              </ul>
+            </div>
+          </li>
+    
+          <li>
+            <div class="titulo" onclick="toggleContenido('contenido5')"> Estadística y Pensamiento Lógico</div>
+            <div id="contenido5" class="contenidoa">
+              <ul>
+                <li>Introducción a Estadística y Probabilidad</li>
+                <li>Pensamiento Lógico: Algoritmos y Diagramas de Flujo</li>
+                <li>Pensamiento Lógico: Manejo de Datos, Estructuras y Funciones</li>
+                <li>Pensamiento Lógico: Lenguajes de Programación</li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
-    </section>
 
     <section id="Mi Stack Tecnológico">
       <!-- <h2>Mi Stack Tecnológico</h2> -->
@@ -202,8 +227,6 @@
       <h2>Contacto</h2>
       <a href="https://www.linkedin.com/in/jose-luis-valbuena-649721294" target="_blank">LinkedIn: <span style="margin-left: 22px;"> www.linkedin.com/in/jose-luis-valbuena-649721294</span></a> 
       <br>
-      <a href="https://github.com/codigojlv"target="_blank">GitHub: <span style="margin-left: 33px;" >https://github.com/codigojlv</span></a> 
-      <br>
       <a href="#">Whatsapp: <span style="margin-left: 10px;">+34 644527140</span> </a> 
       <br>
       <a href="#">Email:<span style="margin-left: 50px;">codigo.jlv@gmail.com</span>  </a>
@@ -237,3 +260,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
