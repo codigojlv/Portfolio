@@ -51,6 +51,9 @@ body {
 }
 .sidebar img {  /*foto*/
   border-radius: 15px;
+  width: 68%;
+  object-fit:scale-down;
+  _----------------------------------------------------------------------------------------------------
 }
 .sidebar h2 {
   margin-top: 0;
@@ -211,7 +214,43 @@ section h2 {
   font-style: italic;
   color: #777;
 }
+/* ---------------------cursos plazi---------------------------------- */
+.miscursos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 5%;
+  
+}
 
+.miscursos li {
+  margin-bottom: 10px;
+}
+
+.titulo {
+  padding: 10px;
+  background-color: #f7f0f0;
+  color: rgb(61, 59, 59);
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.titulo:hover {
+  background-color: #0056b3;
+}
+
+.contenidoa {
+  display: none;
+  padding-left: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+/* ---------------------------------------------------------------- */
 .cursos h3 {
   font-size: 1.5em;
   color: #28a745;
@@ -521,6 +560,9 @@ body.dark-mode .sidebar a {
 }
 body.dark-mode .sidebar img {  /*foto*/
   border-radius: 15px;
+  width: 68%;
+  object-fit:scale-down;
+  
 }
 body.dark-mode .sidebar a:hover {
   background-color: #00aaff;
@@ -580,14 +622,48 @@ body.dark-mode #educacion h2 {
 body.dark-mode #educacion strong {
   color: #eff5f5; /* Un tono cian claro, puedes ajustarlo a tu gusto */
 }
-body.dark-mode .cursos h3 {
+/* body.dark-mode .cursos h3 {
   color: #007bff;
 }
 
 body.dark-mode .cursos p {
   color: #ffffff;
-}
-
+} */
+  /* Estilos del menú */
+  /* ---------------------------------------------------------menu de cursos------- */
+  body.dark-mode .miscursos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body.dark-mode .miscursos li {
+    margin-bottom: 10px;
+  }
+  
+  body.dark-mode .titulo {
+    padding: 10px;
+    background-color: #2a2a2a;
+    color: rgb(226, 222, 222);
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  body.dark-mode .titulo:hover {
+    background-color: #444343;
+  }
+  
+  body.dark-mode .contenidoa {
+    display: none;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border: 1px solid #2a2a2a;/*borde del desplegable*/
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+ 
+  /* ------------------------------------------------------------------------------- */
 body.dark-mode .stack-tecnologico {
   background-color: #2a2a2a;
   border-color: #444;
@@ -657,3 +733,5 @@ body.dark-mode #contacto a{
   text-decoration: none;
   line-height: 2.2;
 }
+
+/* Estilos del menú de cursos modo oscuro*/
