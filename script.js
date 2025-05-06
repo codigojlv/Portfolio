@@ -41,3 +41,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// control de menu cursos
+
+function toggleContenido(id) {
+    const contenido = document.getElementById(id);
+    const contenidos = document.querySelectorAll('.contenidoa');
+  
+    // Cerrar todos los contenidos
+    contenidos.forEach(c => {
+      if (c !== contenido) {
+        c.style.display = 'none';
+      }
+    });
+  
+    // Alternar el contenido seleccionado
+    if (contenido.style.display === 'block') {
+      contenido.style.display = 'none';
+    } else {
+      contenido.style.display = 'block';
+    }
+  }
